@@ -2,11 +2,11 @@ import { connectToDB } from "@utils/database";
 import Movie from "@models/prompt";
 
 export const POST = async (req) => {
-  const { name, image, type } = await req.json();
+  const { title, image, rating, color } = await req.json();
 
   try {
     await connectToDB();
-    const newMovie = new Movie({ creator: name, image, type });
+    const newMovie = new Movie({ creator: title, image, rating, color });
 
     await newMovie.save();
     return new Response(JSON.stringify(newMovie), { status: 201 });

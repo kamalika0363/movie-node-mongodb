@@ -1,7 +1,7 @@
 import { Schema, model, models } from "mongoose";
 
 const MovieSchema = new Schema({
-  name: {
+  title: {
     type: String,
     unique: [true, "name already exists!"],
     required: [true, "name is required!"],
@@ -10,10 +10,12 @@ const MovieSchema = new Schema({
     type: String,
     required: [true, "image is required!"],
   },
-  type: {
+  rating: {
+    type: Number,
+    required: [true, "rating is required!"],
+  },
+  color: {
     type: String,
-    required: true,
-    enum: ["Horror", "Action", "Thriller", "Comedy"],
   },
 });
 
