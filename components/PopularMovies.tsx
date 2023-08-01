@@ -25,8 +25,7 @@ export default function pop() {
   return (
     <div className="sm-bg-gradient lg:bg-black ">
       <h1 className="text-2xl font-bold pl-5 pt-5 md:text-left md:pl-0 lg:pl-40">
-        Popular Movies 2023
-      </h1>
+Suggest Movies      </h1>
       <div className="flex flex-col items-center">
         <div className="flex flex-wrap justify-center">
           {movies?.map((movie) => (
@@ -37,7 +36,7 @@ export default function pop() {
               <img
                 src={movie?.image}
                 alt={movie?.title}
-                className="h-72 w-96 rounded-xl"
+                className="h-72 w-96 rounded-xl object-contain"
               />
               <div
                 className="absolute bottom-12 md:w-full rounded-3xl p-2 md:bottom-6 w-80"
