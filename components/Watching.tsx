@@ -23,10 +23,10 @@ export default function Watching() {
   }, []);
   return (
     <div className="sm-bg-gradient lg:bg-black border-b-1 border-b-gray-700 sm:border-hidden">
-      <h1 className="text-2xl font-bold pl-8 pt-5 md:text-left md:pl-2 lg:pl-80">
+      <h1 className="text-2xl font-bold pl-8 pt-5 md:text-left md:pl-2 lg:pl-40">
         Continue Watching
       </h1>
-      <div className="flex flex-col items-end">
+      <div className="flex flex-col items-center">
         <div className="flex flex-wrap justify-center">
           {movies?.map((movie) => (
             <div

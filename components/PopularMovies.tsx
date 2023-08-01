@@ -24,10 +24,10 @@ export default function pop() {
 
   return (
     <div className="sm-bg-gradient lg:bg-black ">
-      <h1 className="text-2xl font-bold pl-5 pt-5 md:text-left md:pl-0 lg:pl-80">
+      <h1 className="text-2xl font-bold pl-5 pt-5 md:text-left md:pl-0 lg:pl-40">
         Popular Movies 2023
       </h1>
-      <div className="flex flex-col items-end">
+      <div className="flex flex-col items-center">
         <div className="flex flex-wrap justify-center">
           {movies?.map((movie) => (
             <div
